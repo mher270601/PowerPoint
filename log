@@ -1,0 +1,255 @@
+In file included from main.cpp:3:
+PowerPoint.hpp:118:42: error: ‘GroupItem’ was not declared in this scope
+  118 |         using GroupPtr = std::shared_ptr<GroupItem>;
+      |                                          ^~~~~~~~~
+PowerPoint.hpp:118:51: error: template argument 1 is invalid
+  118 |         using GroupPtr = std::shared_ptr<GroupItem>;
+      |                                                   ^
+PowerPoint.hpp:119:24: error: ‘GroupItem’ has not been declared
+  119 |         void AddObject(GroupItem* object);
+      |                        ^~~~~~~~~
+PowerPoint.hpp:126:21: error: ‘GroupItem’ was not declared in this scope
+  126 |         std::vector<GroupItem*> m_slide;
+      |                     ^~~~~~~~~
+PowerPoint.hpp:126:31: error: template argument 1 is invalid
+  126 |         std::vector<GroupItem*> m_slide;
+      |                               ^
+PowerPoint.hpp:126:31: error: template argument 2 is invalid
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: In member function ‘virtual void PowerPoint::Slide::SetSize(size_t)’:
+PowerPoint.impl.hpp:160:26: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  160 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:160:26: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  160 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: In member function ‘virtual void PowerPoint::Slide::SetBorderSize(size_t)’:
+PowerPoint.impl.hpp:165:26: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  165 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:165:26: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  165 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: In member function ‘virtual void PowerPoint::Slide::SetColor(Color)’:
+PowerPoint.impl.hpp:170:26: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  170 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:170:26: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  170 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: In member function ‘virtual void PowerPoint::Slide::SetBackgroundColor(Color)’:
+PowerPoint.impl.hpp:175:26: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  175 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:175:26: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  175 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: At global scope:
+PowerPoint.impl.hpp:180:35: error: variable or field ‘AddObject’ declared void
+  180 | void PowerPoint::Slide::AddObject(GroupItem* object) {
+      |                                   ^~~~~~~~~
+PowerPoint.impl.hpp:180:35: error: ‘GroupItem’ was not declared in this scope
+PowerPoint.impl.hpp:180:46: error: ‘object’ was not declared in this scope
+  180 | void PowerPoint::Slide::AddObject(GroupItem* object) {
+      |                                              ^~~~~~
+PowerPoint.impl.hpp: In member function ‘virtual void PowerPoint::Slide::PrintMe() const’:
+PowerPoint.impl.hpp:185:26: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  185 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:185:26: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  185 |  for (const auto& item : m_slide) {
+      |                          ^~~~~~~
+      |                          std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp: In destructor ‘virtual PowerPoint::Slide::~Slide()’:
+PowerPoint.impl.hpp:191:20: error: ‘begin’ was not declared in this scope; did you mean ‘std::begin’?
+  191 |  for (auto& elem : m_slide) {
+      |                    ^~~~~~~
+      |                    std::begin
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:105:37: note: ‘std::begin’ declared here
+  105 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:191:20: error: ‘end’ was not declared in this scope; did you mean ‘std::end’?
+  191 |  for (auto& elem : m_slide) {
+      |                    ^~~~~~~
+      |                    std::end
+In file included from /usr/include/c++/9/string:54,
+                 from /usr/include/c++/9/bits/locale_classes.h:40,
+                 from /usr/include/c++/9/bits/ios_base.h:41,
+                 from /usr/include/c++/9/ios:42,
+                 from /usr/include/c++/9/ostream:38,
+                 from /usr/include/c++/9/iostream:39,
+                 from main.cpp:1:
+/usr/include/c++/9/bits/range_access.h:107:37: note: ‘std::end’ declared here
+  107 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+In file included from PowerPoint.hpp:239,
+                 from main.cpp:3:
+PowerPoint.impl.hpp:192:10: error: type ‘<type error>’ argument given to ‘delete’, expected pointer
+  192 |   delete elem;
+      |          ^~~~
+PowerPoint.impl.hpp: In member function ‘void PowerPoint::Group::MoveRight(size_t)’:
+PowerPoint.impl.hpp:228:2: error: ‘m_coords’ was not declared in this scope; did you mean ‘Coords’?
+  228 |  m_coords.x += plusX;
+      |  ^~~~~~~~
+      |  Coords
+PowerPoint.impl.hpp: In member function ‘void PowerPoint::Group::MoveLeft(size_t)’:
+PowerPoint.impl.hpp:232:2: error: ‘m_coords’ was not declared in this scope; did you mean ‘Coords’?
+  232 |  m_coords.x -= minusX;
+      |  ^~~~~~~~
+      |  Coords
+PowerPoint.impl.hpp: In member function ‘void PowerPoint::Group::MoveTop(size_t)’:
+PowerPoint.impl.hpp:236:2: error: ‘m_coords’ was not declared in this scope; did you mean ‘Coords’?
+  236 |  m_coords.y += plusY;
+      |  ^~~~~~~~
+      |  Coords
+PowerPoint.impl.hpp: In member function ‘void PowerPoint::Group::MoveBottom(size_t)’:
+PowerPoint.impl.hpp:240:2: error: ‘m_coords’ was not declared in this scope; did you mean ‘Coords’?
+  240 |  m_coords.y -= minusY;
+      |  ^~~~~~~~
+      |  Coords
+In file included from readInfo.hpp:36,
+                 from main.cpp:4:
+readInfo.impl.cpp: In member function ‘virtual void Administrator::GetData()’:
+readInfo.impl.cpp:32:12: error: expected ‘;’ before ‘object’
+   32 |    std::cin object;
+      |            ^~~~~~~
+      |            ;
