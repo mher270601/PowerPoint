@@ -1,10 +1,11 @@
-#include <iostream>
+//#include <iostream>
 
 #include "PowerPoint.hpp"
-#include "readInfo.hpp"
+#include "pwpt_fileManager.hpp"
+//#include "readInfo.hpp"
 
-int main(){
-	Administrator obj;
+int main(int argc, char* argv[]){
+	FileManager obj;
 	PowerPoint::Triangle ob(Color::BLACK, Color::WHITE, 12);
 	return 0;
 }

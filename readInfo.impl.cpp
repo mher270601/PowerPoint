@@ -2,11 +2,13 @@
 #define __READ__INFO__IMPL__CPP__
 
 #include <algorithm>
+#include <cstring>
 #include <memory>
 #include <sstream>
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <stdexcept>
 
 #include "readFromFile.hpp"
 #include "PowerPoint.hpp"
@@ -21,19 +23,19 @@ void Administrator::GetData(){
 	std::string line;
 	std::string action;
 	do{
-		std::cout << "Input: ";
+		std::cout << "Input action: ";
 		std::cin >> action;
 		line += action;
 		line += " ";
 		std::transform(action.begin(), action.end(), action.begin(), ::toupper);
-		if(action == "CREATE"){
+		if(!strcmp(action.c_str(), "CREATE")){
 			std::string object;
 			std::cout << "Input object type: ";
 			std::cin >> object;
 			std::transform(object.begin(), object.end(), object.begin(), ::toupper);
 			line += object;
 			line += " ";
-			if(object == "SLIDE"){
+			if(!strcmp(object.c_str(), "SLIDE")){
 				std::string slideName;
 				std::cout << "Input Slide name: ";
 				std::cin >> slideName;
@@ -41,7 +43,7 @@ void Administrator::GetData(){
 				line += slideName;
 				line += " ";
 			}
-			else if(object == "GROUP"){
+			else if(!strcmp(object.c_str(), "GROUP")){
 				std::string groupName;
 				std::cout << "Input Group name: ";
 				std::cin >> groupName;
@@ -49,14 +51,34 @@ void Administrator::GetData(){
 				line += groupName;
 				line += " ";
 			}
-			else if(object == "TRIANGLE"){
+			else if(!strcmp(object.c_str(), "TRIANGLE")){
 				std::string color;
-				std::cout << "Input Triangle Color";
+				std::cout << "(Triangle): Input color";
 				std::cin >> color;
 				
 				line += color;
 				line += " ";
 			}
+			else if(!strcmp(object.c_str(), "TRIANGLE")){
+				std::string color;
+				std::cout << "(Triangle): Input color";
+				std::cin >> color;
+				
+				line += color;
+				line += " ";
+			}
+		}
+		else if(!strcmp(action.c_str(), "PRESENT")){
+			std::string _slideName;
+			std::cout << "Input slide name: " << std::endl;
+			std::cin >> _slideName;
+			
+			line += _slideName;
+			line += " ";
+		}
+		else{
+			std::cerr << "ERROR: Invalid type of action" << std::endl;
+			throw std::runtime_error("ERROR: Invalid type of action");
 		}
 		m_file << line << std::endl;
 	}while(line != "end");

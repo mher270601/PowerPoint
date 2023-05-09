@@ -1,6 +1,8 @@
 #ifndef __ETYPES__HPP__
 #define __ETYPES__HPP__
 
+#include "ECoordinates.hpp"
+
 enum class Color {
     RED,
     BLUE,
@@ -19,9 +21,9 @@ struct ItemData {
     size_t size{ 12 };
     size_t borderSize{ 2 };
     ItemData(const Color& _color, const Color& _backColor, const size_t _size) :
-        color{ _color },
-        backgroundColor{ _backColor },
-        size{ _size }
+        									color{ _color },
+        									backgroundColor{ _backColor },
+        									size{ _size }
     {}
     ItemData() = default;
 };
